@@ -1,4 +1,4 @@
-export default function eventBasic ({type}) {
+export default function EventBasic ({type}) {
     // Click event handler
     const current = () => {
         const d = new Date();
