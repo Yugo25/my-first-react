@@ -3,26 +3,18 @@ export default function EventBasic ({type}) {
     const current = () => {
         const d = new Date();
         
-    // Print the date depending in the type
-    switch(type) {
-        case 'date':
-            console.log(d.toLocalDateString());
-            return (
-                <p>d.toLocalDateString()</p>
-            );
-            break;
-        case 'time':
-            console.log(d.toLocalTimeString());
-            return (
-                <p>d.toLocalTimeString()</p>
-            );
-            break;
-        default:
-            console.log(d.toLocalString());
-            return (
-                <p>d.toLocalString()</p>
-            );
-            break;
+        // Print the date depending in the type
+        switch(type) {
+            case 'date':
+                console.log(d.toLocaleDateString());
+                break;
+            case 'time':
+                console.log(d.toLocaleTimeString());
+                break;
+            default:
+                console.log(d.toLocaleString());
+                break;
+        };
     };
     
     return (
