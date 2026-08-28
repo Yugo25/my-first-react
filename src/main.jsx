@@ -9,6 +9,7 @@ import StateBasic from './chap03/StateBasic';
 import books from './chap03/books.js';
 import ForList from './chap03/ForList.jsx';
 import ForFilter from './chap03/ForFilter.jsx';
+import ForNest from './chap03/ForNest.jsx';
 import ForSort from './chap03/ForSort.jsx';
 
 createRoot(document.getElementById('root')).render(
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
         <EventBasic type="time" />
         <StateBasic init={0} />
         <ForList src={books} />
+        <ForNest src={books} />
         <ForFilter src={books} />
         <ForSort src={books} />
     </>
