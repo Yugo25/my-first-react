@@ -15,6 +15,7 @@ import SlectComp from './chap03/SelectComp';
 import SelectStyle from './chap03/SelectStyle';
 import StyledPanel from './chap03/StylesPanel';
 import TitledPanel from './chap03/TitledPanel';
+import StateParent from './chap03/StateParent';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -36,6 +37,7 @@ createRoot(document.getElementById('root')).render(
           <p key="title">Hi</p>
           <p key="body">Hello world</p>
         </TitledPanel>
+        <StateParent />
     </>
   </StrictMode>,
 )
