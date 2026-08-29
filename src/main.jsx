@@ -17,6 +17,7 @@ import StyledPanel from './chap03/StylesPanel';
 import TitledPanel from './chap03/TitledPanel';
 import StateParent from './chap03/StateParent';
 import EventMouse from './chap03/EventMouse';
+import EventError from './chap03/EventError';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -43,6 +44,7 @@ createRoot(document.getElementById('root')).render(
           alt=”ロゴ画像"
           defaultSrc="https://www.web-deli.com/image/linkbanner_l.gif" 
           afterSrc="https://www.web-deli.com/image/home_chara.gif" />
+        <EventError src="./images/wings.jpg" alt="Sample image" />
     </>
   </StrictMode>,
 )
