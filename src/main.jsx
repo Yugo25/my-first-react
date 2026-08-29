@@ -16,6 +16,7 @@ import SelectStyle from './chap03/SelectStyle';
 import StyledPanel from './chap03/StylesPanel';
 import TitledPanel from './chap03/TitledPanel';
 import StateParent from './chap03/StateParent';
+import EventMouse from './chap03/EventMouse';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -38,6 +39,10 @@ createRoot(document.getElementById('root')).render(
           <p key="body">Hello world</p>
         </TitledPanel>
         <StateParent />
+        <EventMouse
+          alt=”ロゴ画像"
+          defaultSrc="https://www.web-deli.com/image/linkbanner_l.gif" 
+          afterSrc="https://www.web-deli.com/image/home_chara.gif" />
     </>
   </StrictMode>,
 )
