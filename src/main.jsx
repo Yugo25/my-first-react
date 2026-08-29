@@ -13,6 +13,7 @@ import ForNest from './chap03/ForNest.jsx';
 import ForSort from './chap03/ForSort.jsx';
 import SlectComp from './chap03/SelectComp';
 import SelectStyle from './chap03/SelectStyle';
+import StyledPanel from './chap03/StylesPanel';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -26,6 +27,10 @@ createRoot(document.getElementById('root')).render(
         <ForSort src={books} />
         <SelectComp />
         <SelectStyle mode="light" />
+        <StyledPanel>
+          <p>Hi</p>
+          <p>Hello world</p>
+        </StyledPanel>
     </>
   </StrictMode>,
 )
