@@ -12,6 +12,7 @@ import ForFilter from './chap03/ForFilter.jsx';
 import ForNest from './chap03/ForNest.jsx';
 import ForSort from './chap03/ForSort.jsx';
 import SlectComp from './chap03/SelectComp';
+import SelectStyle from './chap03/SelectStyle';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')).render(
         <ForFilter src={books} />
         <ForSort src={books} />
         <SelectComp />
+        <SelectStyle mode="light" />
     </>
   </StrictMode>,
 )
