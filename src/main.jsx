@@ -19,6 +19,7 @@ import StateParent from './chap03/StateParent';
 import EventMouse from './chap03/EventMouse';
 import EventError from './chap03/EventError';
 import EventObj frim './chap03/EventObj';
+import EventArgs from './chap03/EventArgs';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -47,6 +48,7 @@ createRoot(document.getElementById('root')).render(
           afterSrc="https://www.web-deli.com/image/home_chara.gif" />
         <EventError src="./images/wings.jpg" alt="Sample image" />
         <EventObj />
+        <EventArgs />
     </>
   </StrictMode>,
 )
