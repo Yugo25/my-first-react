@@ -23,6 +23,8 @@ import EventArgs from './chap03/EventArgs';
 import EventArgs2 from './chap03/EventArgs2';
 import EventOnce from './chap03/EventOnce';
 
+import StateForm from './chap04/StateForm';
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <>
@@ -54,6 +56,7 @@ createRoot(document.getElementById('root')).render(
         <EventArgs />
         <EventArgs2 />
         <EventOnce /> 
+        <StateForm />
     </>
   </StrictMode>,
 )
