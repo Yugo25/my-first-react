@@ -20,6 +20,7 @@ import EventMouse from './chap03/EventMouse';
 import EventError from './chap03/EventError';
 import EventObj frim './chap03/EventObj';
 import EventArgs from './chap03/EventArgs';
+import EventArgs2 from './chap03/EventArgs2';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -49,6 +50,7 @@ createRoot(document.getElementById('root')).render(
         <EventError src="./images/wings.jpg" alt="Sample image" />
         <EventObj />
         <EventArgs />
+        <EventArgs2 />
     </>
   </StrictMode>,
 )
