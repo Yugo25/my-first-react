@@ -24,6 +24,8 @@ import EventArgs2 from './chap03/EventArgs2';
 import EventOnce from './chap03/EventOnce';
 
 import StateForm from './chap04/StateForm';
+import StateFormUC from './chap04/StateFormUC';
+import FormTextarea from './chap04/FormTextarea';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -57,6 +59,8 @@ createRoot(document.getElementById('root')).render(
         <EventArgs2 />
         <EventOnce /> 
         <StateForm />
+        <StateFormUC />
+        <FormTextarea />
     </>
   </StrictMode>,
 )

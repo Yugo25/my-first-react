@@ -12,19 +12,18 @@ export default function StateFormUC() {
             <div>
                 <label htmlFor="name">Name: </label>
                 <input id="name" name="name" type="text"
-                ref={name} />
+                ref={name} defaultValue="Smith" />
             </div>
             <div>
                 <label htmlFor="age">Age: </label>
                 <input id="age" name="age" type="number"
-                onChange={handleForm} value={form.age} />
+                ref={age} defaultValue="18" />
             </div>
             <div>
                 <button type="button" onClick={show}>
                     Submit
                 </button>
             </div>
-            <p>Hello, {form.name} ({form.age} years old)!</p>
         </form>
     );
 }
