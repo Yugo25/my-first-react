@@ -21,6 +21,7 @@ import EventError from './chap03/EventError';
 import EventObj frim './chap03/EventObj';
 import EventArgs from './chap03/EventArgs';
 import EventArgs2 from './chap03/EventArgs2';
+import EventOnce from './chao03/EventOnce';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -51,6 +52,7 @@ createRoot(document.getElementById('root')).render(
         <EventObj />
         <EventArgs />
         <EventArgs2 />
+        <EventOnce />
     </>
   </StrictMode>,
 )
