@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 
-export default functiom ForFilter ({ src }) {
-    const lowPrice = books.filter(book => book.price < 35.00);
+export default function ForFilter ({ src }) {
+    const lowPrice = src.filter(book => book.price < 35.00);
     return (
         <dl>
             {lowPrice.map(elem => (
