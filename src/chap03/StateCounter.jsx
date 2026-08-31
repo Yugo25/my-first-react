@@ -1,9 +1,9 @@
 import './StateCounter.css'
 
 export default function StateCounter ({ step, onUpdate }) {
-    const handkeClock = () => onUpdate(step)
+    const handleClick = () => onUpdate(step)
     return (
-        <button className="cnt" onClick={handkeClick}>
+        <button className="cnt" onClick={handleClick}>
             <span>{step}</span>
         </button>
     );

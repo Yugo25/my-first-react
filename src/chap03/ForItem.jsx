@@ -1,3 +1,5 @@
+import Download from './Download';
+
 export default function ForItem({ book }) {
     let dd;
     if (book.download) {
@@ -8,8 +10,8 @@ export default function ForItem({ book }) {
     return (
         <>
             <dt>
-                <a href={`https://wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpg`}>
-                    {elem.title} ({elem.price} dollars)
+                <a href={`https://wings.msn.to/books/${book.isbn}/${book.isbn}.jpg`}>
+                    {book.title} ({book.price} dollars)
                 </a>
             </dt>
             {dd}

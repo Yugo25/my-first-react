@@ -1,5 +1,5 @@
 export default function EventArgs2() {
-    const current = e => (
+    const current = e => {
         const type = e.target.dataset.type;
         const d = new Date();
         switch(type) {
@@ -7,13 +7,13 @@ export default function EventArgs2() {
                 console.log(`${e.target.id}: ${d.toLocaleDateString()}`);
                 break;
             case 'time':
-                console.log(`${e.target.id}: ${d.toLocaleTumeString()}`);
+                console.log(`${e.target.id}: ${d.toLocaleTimeString()}`);
                 break;
             default:
-                console.log(`${e.target.id}: ${d.toLocaleString()}');
+                console.log(`${e.target.id}: ${d.toLocaleString()}`);
                 break;
         }
-    );
+    };
     return (
         <div>
             <button id="dt" data-type="datetime" onClick={current}></button>

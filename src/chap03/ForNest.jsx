@@ -1,6 +1,6 @@
 import ForItem from './ForItem.jsx';
 
-export default function ForNest({ stc }) {
+export default function ForNest({ src }) {
     return (
         <dl>
             {src.map(elem =>
