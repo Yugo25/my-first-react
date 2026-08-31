@@ -16,7 +16,8 @@ export default function EventArgs() {
     return (
         <div>
             <button id="dt" onClick={e => current(e, 'datetime')}></button>
-            <button id="date" onClock={e => current
+            <button id="date" onClock={e => current(e, 'date')}></button>
+            <button id="time" onClick={e => current(e, 'time')}></button>
         </div>
     );
 }
