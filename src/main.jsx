@@ -67,5 +67,6 @@ createRoot(document.getElementById('root')).render(
         <FormSelect />
         <FormList />
         <StateNest />
+    </>
   </StrictMode>,
 )
