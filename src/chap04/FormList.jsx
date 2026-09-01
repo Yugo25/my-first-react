@@ -1,4 +1,4 @@
-import { useReact } from 'react';
+import { useState } from 'react';
 
 export default function FormList() {
     const [form, setForm] = useState({
@@ -9,7 +9,7 @@ export default function FormList() {
         const data = [];
         
         const ops = e.target.options;
-        for (const opt of options) {
+        for (const opt of ops) {
                 if (opt.selected) {
                     data.push(opt.value);
             }
@@ -29,7 +29,7 @@ export default function FormList() {
         <form>
             <label htmlFor="animal">Favorite animal：</label><br/>
             <select id="animal" name="animal"
-                value=(form.animal} size="4" multiple=(true} onChange=(handleFormList)>
+                value={form.animal} size="4" multiple={true} onChange={handleFormList}>
                 <option value="dog">Dog</option>
                 <option value="cat">Cat</option>
                 <option value="hamster ">Hamster</option>

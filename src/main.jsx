@@ -28,6 +28,7 @@ import StateFormUC from './chap04/StateFormUC';
 import FormTextarea from './chap04/FormTextarea';
 import FormSelect from './chap04/FormSelect';
 import FormList from './chap04/FormList';
+import StateNest from './chap04/StateNest';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -65,6 +66,6 @@ createRoot(document.getElementById('root')).render(
         <FormTextarea />
         <FormSelect />
         <FormList />
-    </>
+        <StateNest />
   </StrictMode>,
 )
