@@ -29,10 +29,12 @@ import FormTextarea from './chap04/FormTextarea';
 import FormSelect from './chap04/FormSelect';
 import FormList from './chap04/FormList';
 import StateNest from './chap04/StateNest';
+import StateTodo from './chap04/StateTodo';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <>
+    {/*
         <App />
         <EventBasic type="time" />
         <StateBasic init={0} />
@@ -40,7 +42,7 @@ createRoot(document.getElementById('root')).render(
         <ForNest src={books} />
         <ForFilter src={books} />
         <ForSort src={books} />
-        {/* <SelectComp /> */}
+        {/* <SelectComp /> 
         
         <SelectStyle mode="light" />
         <StyledPanel>
@@ -52,11 +54,11 @@ createRoot(document.getElementById('root')).render(
           <p key="body">Hello world</p>
         </TitledPanel>
         <StateParent />
-        {/* <EventMouse
+        <EventMouse
           alt="logo image"
           defaultSrc="https://www.web-deli.com/image/linkbanner_l.gif" 
-          afterSrc="https://www.web-deli.com/image/home_chara.gif" /> */}
-        <EventError src="./images/wings.jpg" alt="Sample image" />
+          afterSrc="https://www.web-deli.com/image/home_chara.gif" /> 
+        <EventError src="./images/wings.jpg" alt="Sample image" /> 
         <EventObj />
         <EventArgs />
         <EventArgs2 />
@@ -66,7 +68,8 @@ createRoot(document.getElementById('root')).render(
         <FormTextarea />
         <FormSelect />
         <FormList />
-        <StateNest />
+        <StateNest /> */}
+        <StateTodo />
     </>
   </StrictMode>,
 )
