@@ -6,6 +6,7 @@ export default function StateTodo() {
 
     const [title, setTitle] = useState('');
     const [todo, setTodo] = useState([]);
+    const [desc, setDesc] = useState(true);
 
     const handleChangeTitle = e => {
         setTitle(e.target.value);
@@ -39,6 +40,25 @@ export default function StateTodo() {
         }));
     };
 
+    const handleRemove = e => {
+        setTodo(todo.filter(item =>
+            item.id !== Number(e.target.dataset.id)
+        ));
+    }
+
+    const handleSort = () => {
+        const sorted = [...todo];
+        sorted.sort((m, n) => {
+            if (desc) {
+                return n.created.getTime() - m.created.getTime();
+            } else {
+                return m.created.getTime() - n.created.getTime();
+            }
+        });
+        setDesc(!desc);
+        setTodo(sorted);
+    };
+
     return (
         <div>
             <label>Todo: 
@@ -47,6 +67,7 @@ export default function StateTodo() {
             </label>
             <button type="button" 
             onClick={handleClick}>Add</button>
+            <button type="button" onClick={handleSort}>Sort ({desc ? '↑' : '↓'})</button>
             <hr />
 
             <ul>
@@ -57,6 +78,8 @@ export default function StateTodo() {
                         <button type="button"
                         onClick={handleDone} data-id={item.id}>Done
                         </button>
+                        <button type="button"
+                        onClick = {handleRemove} data-id={item.id}>Remove</button>
                     </li>
                 ))}
             </ul>
