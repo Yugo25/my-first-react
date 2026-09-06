@@ -32,6 +32,7 @@ import StateNest from './chap04/StateNest';
 import StateTodo from './chap04/StateTodo';
 
 import LazyBasic from './chap05/LazyBasic';
+import SuspenseSimple from './chap05/SuspenseSimple';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -74,6 +75,7 @@ createRoot(document.getElementById('root')).render(
         <StateTodo /> */}
         
         <LazyBasic />
+        <SuspenseSimple />
     </>
   </StrictMode>,
 )
