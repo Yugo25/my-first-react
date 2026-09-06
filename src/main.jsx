@@ -31,6 +31,8 @@ import FormList from './chap04/FormList';
 import StateNest from './chap04/StateNest';
 import StateTodo from './chap04/StateTodo';
 
+import LazyBasic from './chap05/LazyBasic';
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <>
@@ -68,8 +70,10 @@ createRoot(document.getElementById('root')).render(
         <FormTextarea />
         <FormSelect />
         <FormList />
-        <StateNest /> */}
-        <StateTodo />
+        <StateNest /> 
+        <StateTodo /> */}
+        
+        <LazyBasic />
     </>
   </StrictMode>,
 )
