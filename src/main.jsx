@@ -33,6 +33,7 @@ import StateTodo from './chap04/StateTodo';
 
 import LazyBasic from './chap05/LazyBasic';
 import SuspenseSimple from './chap05/SuspenseSimple';
+import SuspenseResult from './chap05/SuspenseResult';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -76,6 +77,7 @@ createRoot(document.getElementById('root')).render(
         
         <LazyBasic />
         <SuspenseSimple />
+        <SuspenseResult />
     </>
   </StrictMode>,
 )
