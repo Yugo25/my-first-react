@@ -5,7 +5,7 @@ export default function FormBasic() {
     const defaultValues = {
         name: 'Smith',
         email: 'admin@example.com',
-        genter: 'male',
+        gender: 'male',
         memo: '',
     };
 
@@ -40,7 +40,7 @@ export default function FormBasic() {
                     Male
                 </label>
                 <label>
-                    <input type="radio" id="female" value="famale"
+                    <input type="radio" id="female" value="female"
                     {...register('gender', {
                         required: 'Gender is required',
                     })} />
@@ -52,9 +52,29 @@ export default function FormBasic() {
                 <label htmlFor="email">Email: </label><br />
                 <input type="email" id="email"
                 {...register('email', {
-                    
-                })}
+                    required: 'Email is required',
+                    pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: 'Invalid email address',
+                    }
+                })} />
+                <div className="error">{errors.email?.message}</div>
+            </div>
+            <div>
+                <label htmlFor="memo">Memo: </label><br />
+                <textarea id="memo"
+                {...register('memo', {
+                    required: 'Memo is required',
+                    minLength: {
+                        value: 10,
+                        message: 'Memo must be at least 10 characters',
+                    }
+                })} />
+                <div className="error">{errors.memo?.message}</div>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
             </div>
         </form>
-    )
+);
 }
