@@ -37,6 +37,8 @@ import SuspenseResult from './chap05/SuspenseResult';
 import ProfilerBasic from './chap05/ProfilerBasic'
 import { MyButton, MyStyledButton } from './chap05/EmotionStyled';
 import EmotionProps from './chap05/EmotionProps';
+import MotionBasic from './chap05/MotionBasic';
+import MotionExit from './chap05/MotionExit';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -85,6 +87,8 @@ createRoot(document.getElementById('root')).render(
         <MyButton>Click</MyButton>
         <MyStyledButton>Click</MyStyledButton>
         <EmotionProps />
+        <MotionBasic />
+        <MotionExit />
     </>
   </StrictMode>,
 )
