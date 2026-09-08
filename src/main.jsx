@@ -39,6 +39,7 @@ import { MyButton, MyStyledButton } from './chap05/EmotionStyled';
 import EmotionProps from './chap05/EmotionProps';
 import MotionBasic from './chap05/MotionBasic';
 import MotionExit from './chap05/MotionExit';
+import MotionVariant from './chap05/MotionVariant';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -89,6 +90,7 @@ createRoot(document.getElementById('root')).render(
         <EmotionProps />
         <MotionBasic />
         <MotionExit />
+        <MotionVariant />
     </>
   </StrictMode>,
 )
