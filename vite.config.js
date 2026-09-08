@@ -8,4 +8,13 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
+    css: {
+        modules: {
+            localsConvention: "camelCase",
+            generateScopedName: "[name]__[local]___[has:base64:5]",
+            hashPrefix: "wings",
+            scopeBehaviour: "local",
+            globalModulePaths: [/global\.module\.css$/],
+        },
+    },
 })
