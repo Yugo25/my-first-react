@@ -14,7 +14,7 @@ export default function wrapPromise(promise) {
     
     return {
         get() {
-            switch(statis) {
+            switch(status) {
                 case 'fulfilled':
                     return data;
                 case 'rejected':

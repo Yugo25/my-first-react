@@ -16,5 +16,5 @@ function getinfo() {
                 reject('Error');
             }
         }, 2000);
-    )});
+    }));
 }

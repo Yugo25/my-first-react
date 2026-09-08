@@ -35,6 +35,7 @@ import LazyBasic from './chap05/LazyBasic';
 import SuspenseSimple from './chap05/SuspenseSimple';
 import SuspenseResult from './chap05/SuspenseResult';
 import ProfilerBasic from './chap05/ProfilerBasic'
+import { MyButton, MyStyledButton } from './chap05/EmotionStyled';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -74,12 +75,14 @@ createRoot(document.getElementById('root')).render(
         <FormSelect />
         <FormList />
         <StateNest /> 
-        <StateTodo /> */}
+        <StateTodo /> 
         
         <LazyBasic />
         <SuspenseSimple />
         <SuspenseResult />
-        <ProfilerBasic />
+        <ProfilerBasic /> */}
+        <MyButton>Click</MyButton>
+        <MyStyledButton>Click</MyStyledButton>
     </>
   </StrictMode>,
 )

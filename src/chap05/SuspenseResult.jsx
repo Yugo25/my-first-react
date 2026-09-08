@@ -3,7 +3,7 @@ import ThrowResult from './ThrowResult';
 
 export default function SuspenseResult() {
     return (
-        <Suspense fallback={<p>Now loading...</p>}
+        <Suspense fallback={<p>Now loading...</p>}>
             <ThrowResult />
         </Suspense>
     );

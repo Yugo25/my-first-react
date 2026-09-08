@@ -1,11 +1,11 @@
 let flag = false;
 
-export default function ThrowPromise {
+export default function ThrowPromise() {
     if (flag) {
         return <p>Shown correctly</p>
     }
     
-    throw new Promise((resolve, reject) => {
+    throw new Promise((resolve) => {
         setTimeout(() => {
             flag = true;
             resolve('Success!');
